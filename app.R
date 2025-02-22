@@ -3,6 +3,7 @@ library(tidyverse)
 library(DT)
 library(bslib)
 library(thematic)
+library(curl)
 
 thematic::thematic_shiny(font = "Noto Sans Mono")
 
@@ -62,8 +63,7 @@ server <- function(input, output) {
 
   observeEvent(input$showNotification, {
     showNotification(
-      rvDiamonds$textFilters,
-      type = "message",
+      rvDiamonds$textFilters
     )
   })
 
