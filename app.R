@@ -3,7 +3,6 @@ library(tidyverse)
 library(DT)
 library(bslib)
 library(thematic)
-library(systemfonts)
 
 thematic::thematic_shiny(font = "Noto Sans Mono")
 
@@ -38,7 +37,6 @@ ui <- fluidPage(
       )
     ),
     mainPanel(
-      textOutput("textFilters"),
       plotOutput("diamondPlot"),
       DT::DTOutput("DTOutput")
     )
