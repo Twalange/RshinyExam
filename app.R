@@ -37,7 +37,6 @@ ui <- fluidPage(
       )
     ),
     mainPanel(
-      textOutput("textFilters"),
       plotOutput("diamondPlot"),
       DT::DTOutput("DTOutput")
     )
